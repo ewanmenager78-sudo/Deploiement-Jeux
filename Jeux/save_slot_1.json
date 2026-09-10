@@ -1,0 +1,60 @@
+{
+    "money": 0.0,
+    "total_money_earned": 0.0,
+    "click_power": 1.0,
+    "bots": {
+        "netrunner": 0,
+        "ganger": 0,
+        "corpo_drone": 0,
+        "maxtec": 0,
+        "fixer": 0,
+        "trauma_team": 0,
+        "rogue_ai": 0,
+        "arasaka_agent": 0,
+        "netwatch_exec": 0,
+        "soulkiller_rig": 0,
+        "milan_orbital": 0,
+        "rogue_ai_cluster": 0,
+        "nanotech_swarm": 0,
+        "chronos_engine": 0,
+        "god_machine": 0
+    },
+    "upgrades": {
+        "finger": false,
+        "overclock": false,
+        "nanites": false,
+        "hyper_thread": false,
+        "reflex_booster": false,
+        "biopod_mk2": false,
+        "quantum_fingers": false,
+        "synaptic_accelerator": false,
+        "nanite_muscles": false,
+        "neural_matrix": false,
+        "omega_nerves": false,
+        "ai_enhancement": false,
+        "god_fingers": false,
+        "singularity_reflex": false,
+        "ultimate_chrome": false
+    },
+    "items": {
+        "ticket": false,
+        "jacket": false,
+        "sandevistan": false,
+        "relic_core": false,
+        "neuro_blocker": false,
+        "lucy_shard": false,
+        "kiroshi_optics": false,
+        "dorio_fist": false,
+        "pillar_goggles": false,
+        "becca_shotgun": false,
+        "faraday_data": false,
+        "arasaka_tower_blueprint": false,
+        "smasher_armor_plate": false,
+        "moon_ticket": false,
+        "legend_jacket": false
+    },
+    "unlocked_story": [
+        0
+    ],
+    "relic_clicks": 0
+}

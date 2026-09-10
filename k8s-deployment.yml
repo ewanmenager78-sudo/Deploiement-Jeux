@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cyber-clicker-deployment
+  labels:
+    app: cyber-clicker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cyber-clicker
+  template:
+    metadata:
+      labels:
+        app: cyber-clicker
+    spec:
+      containers:
+      - name: cyber-clicker
+        image: ghcr.io/votre-utilisateur/cyber-clicker:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 6080
+          name: novnc-port
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cyber-clicker-service
+spec:
+  type: NodePort
+  selector:
+    app: cyber-clicker
+  ports:
+    - protocol: TCP
+      port: 6080
+      targetPort: 6080
+      nodePort: 30080
